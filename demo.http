@@ -1,0 +1,50 @@
+#
+# Get movies
+#
+GET http://rentals.acmevideos.com:8080/movies
+User-Agent: Emacs Restclient
+
+#
+# Filter movies
+#
+GET http://rentals.acmevideos.com:8080/movies?title=Splash
+User-Agent: Emacs Restclient
+
+#
+# Filter movies
+#
+GET http://rentals.acmevideos.com:8080/movies?title=Gun
+User-Agent: Emacs Restclient
+
+#
+# Get a movie
+#
+GET http://rentals.acmevideos.com:8080/movie/832
+User-Agent: Emacs Restclient
+
+#
+# Get a movie
+#
+GET http://rentals.acmevideos.com:8080/movie/42
+User-Agent: Emacs Restclient
+
+#
+# Get a movie
+#
+GET http://rentals.acmevideos.com:8080/movie/389
+User-Agent: Emacs Restclient
+
+#
+# Get recommendations
+#
+GET http://recommendations.acmevideos.com:8080/recommendations/389
+User-Agent: Emacs Restclient
+
+#
+# Rent a movie
+#
+POST http://rentals.acmevideos.com:8080/rentals
+User-Agent: Emacs Restclient
+Content-Type: application/json
+
+{"movie-id": 389, "customer-id": 582}
